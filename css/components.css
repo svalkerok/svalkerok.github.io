@@ -240,6 +240,7 @@
 
 .restaurant-gallery {
     margin: 3rem 0;
+    width: 100%; /* Убеждаемся что галерея занимает полную ширину */
 }
 
 .gallery-grid {
@@ -247,6 +248,7 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
     margin-bottom: 3rem;
+    max-width: 100%; /* Ограничиваем максимальную ширину */
 }
 
 .gallery-item {
@@ -288,6 +290,7 @@
     grid-template-columns: 1fr 1fr;
     gap: 3rem;
     margin-top: 2rem;
+    align-items: start; /* Выравнивание блоков по верху */
 }
 
 .contact-info, .contact-hours {
@@ -295,6 +298,8 @@
     background-color: white;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    height: fit-content; /* Автоматическая высота блоков */
+    min-height: 350px; /* Минимальная высота для равномерности */
 }
 
 .contact-info h3, .contact-hours h3 {
@@ -385,10 +390,17 @@
 @media (max-width: 768px) {
     .gallery-grid {
         grid-template-columns: 1fr;
+        gap: 1.5rem; /* Уменьшенный gap для мобильных */
     }
 
     .contact-content {
         grid-template-columns: 1fr;
+        gap: 2rem; /* Уменьшенный gap для мобильных */
+    }
+
+    .contact-info, .contact-hours {
+        min-height: auto; /* Убираем минимальную высоту на мобильных */
+        padding: 1.5rem; /* Уменьшенный padding для мобильных */
     }
 
     .footer-content {
