@@ -1,0 +1,93 @@
+/* Hero Section Styles */
+.hero {
+    position: relative;
+    min-height: 72vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--warm-white);
+    background-image: linear-gradient(rgba(15,32,39,0.45), rgba(15,32,39,0.45)), url('../img/Hero Image.png');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    padding: 4rem 0;
+}
+
+.hero::after {
+    /* subtle vignette */
+    content: '';
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background: radial-gradient(ellipse at center, rgba(0,0,0,0) 40%, rgba(0,0,0,0.25) 100%);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 1000px;
+    padding: 4rem 1rem;
+    text-align: center;
+}
+
+.hero .accent-text {
+    display: inline-block;
+    background: rgba(255,255,255,0.04);
+    padding: 0.35rem 0.65rem;
+    border-radius: 999px;
+    color: rgba(255,255,255,0.92);
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 1rem;
+    border: 1px solid rgba(255,255,255,0.06);
+}
+
+.hero h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(1.8rem, 5vw, 3.4rem);
+    line-height: 1.05;
+    color: #fff;
+    margin: 0.35rem 0 1rem 0;
+    text-shadow: 0 6px 20px rgba(0,0,0,0.45);
+}
+
+.hero p {
+    color: rgba(255,255,255,0.92);
+    font-size: 1.02rem;
+    max-width: 780px;
+    margin: 0 auto 1.6rem auto;
+}
+
+.hero .button {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.hero .button-primary {
+    background: var(--primary);
+    color: white;
+    padding: 0.85rem 1.15rem;
+    border-radius: 999px;
+    box-shadow: 0 8px 22px rgba(0,0,0,0.12);
+    border: none;
+    font-weight: 700;
+    transition: transform 220ms ease, box-shadow 220ms ease, filter 220ms ease;
+}
+
+.hero .button-primary:hover {
+    background: var(--secondary);
+    transform: translateY(-3px);
+    box-shadow: 0 14px 32px rgba(0,0,0,0.16);
+    filter: none;
+}
+
+@media (max-width: 768px) {
+    .hero {
+        min-height: 60vh;
+        padding: 3rem 0;
+        background-position: center 30%;
+    }
+    .hero-content { padding: 2.5rem 1rem; }
+    .hero h2 { font-size: 1.75rem; }
+}

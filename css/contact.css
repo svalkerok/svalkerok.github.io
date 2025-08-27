@@ -1,0 +1,19 @@
+/* Contact Section Styles */
+.contact {
+    padding: var(--section-padding) 0;
+    background-color: var(--color-bg-light);
+}
+
+.contact h2 {
+    text-align: center;
+    margin-bottom: 3rem;
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    color: var(--primary);
+}
+
+.text-center {
+    text-align: center;
+    width: 100%;
+    display: block;
+}
