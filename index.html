@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Maritime Grill - Seattle's Premier Seafood Restaurant</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/form.css">
+    <link rel="stylesheet" href="css/gallery.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/hero.css">
+    <script src="js/main.js" defer></script>
+    <script src="js/menu.js" defer></script>
+    <script src="js/reservation.js" defer></script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" data-scroll-header>
+        <div class="container">
+            <div class="logo">
+                <h1>The Maritime Grill</h1>
+            </div>
+            <button class="mobile-menu-btn" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav class="nav" data-nav>
+                <ul>
+                    <li><a href="#home" data-nav-link>Home</a></li>
+                    <li><a href="#about" data-nav-link>About</a></li>
+                    <li><a href="#menu" data-nav-link>Menu</a></li>
+                    <li><a href="#reservations" data-nav-link>Reservations</a></li>
+                    <li><a href="#contact" data-nav-link>Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <p class="accent-text">Seattle's Premier Seafood Restaurant</p>
+            <h2>Fresh Seafood, Stunning Views</h2>
+            <p>Experience the finest Pacific Northwest cuisine in an elegant waterfront setting</p>
+            <a href="#reservations" class="button button-primary">Make a Reservation</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <p class="accent-text">Our Story</p>
+                <h2>A Tradition of Excellence</h2>
+                <p>Where culinary artistry meets Pacific Northwest heritage</p>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Since 2018, The Maritime Grill has been Seattle's premier destination for Pacific Northwest cuisine. Located in Pike Place Market, we partner with local fishermen and farmers to bring the finest seasonal ingredients to your table.</p>
+                    
+                    <p>Led by Executive Chef James Morrison, who brings 20 years of culinary excellence from San Francisco to Vancouver, our kitchen combines classical techniques with innovative Pacific Rim influences to create unforgettable dining experiences.</p>
+                    
+                    <p>Our commitment to sustainability has earned us Seattle Magazine's "Best Sustainable Seafood Restaurant" award three years running. From our herb garden to partnerships with responsible fisheries and local farms, we're dedicated to both excellence and environmental stewardship.</p>
+                    
+                    <a href="#menu" class="button button-secondary">Explore Our Menu</a>
+                </div>
+                <div class="about-image">
+                    <img src="img/Our Story Section.png" alt="The Maritime Grill - Past and Present" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu">
+        <div class="container">
+            <div class="section-header">
+                <p class="accent-text">Culinary Excellence</p>
+                <h2>Our Menu</h2>
+                <p>Discover our carefully curated selection of Pacific Northwest's finest offerings</p>
+            </div>
+
+            <div class="menu-filters">
+                <button class="menu-filter" data-filter="all">All</button>
+                <button class="menu-filter" data-filter="appetizers">Appetizers</button>
+                <button class="menu-filter" data-filter="mains">Main Courses</button>
+                <button class="menu-filter" data-filter="desserts">Desserts</button>
+                <button class="menu-filter" data-filter="beverages">Beverages</button>
+            </div>
+            <div class="menu-categories">
+                <div class="menu-category" data-category="appetizers">
+                    <h3>Appetizers</h3>
+                    <div class="menu-item">
+                        <div class="menu-item-content">
+                            <h4>Pacific Oysters on the Half Shell</h4>
+                            <p>Half dozen, champagne mignonette, fresh horseradish</p>
+                        </div>
+                        <span class="price">$18</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-content">
+                            <h4>Dungeness Crab Cakes</h4>
+                            <p>Sweet corn relish, chipotle aioli, micro greens</p>
+                        </div>
+                        <span class="price">$16</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-content">
+                            <h4>Cedar-Planked Wild Mushrooms</h4>
+                            <p>Local foraged mushrooms, garlic confit, fresh herbs</p>
+                        </div>
+                        <span class="price">$14</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-content">
+                            <h4>Puget Sound Clams</h4>
+                            <p>White wine, garlic, fresh herbs, grilled sourdough</p>
+                        </div>
+                        <span class="price">$16</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-content">
+                            <h4>Seared Sea Scallops</h4>
+                            <p>Cauliflower purée, bacon jam, watercress</p>
+                        </div>
+                        <span class="price">$17</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-content">
+                            <h4>Pike Place Market Salad</h4>
+                            <p>Seasonal greens, local vegetables, champagne vinaigrette</p>
+                        </div>
+                        <span class="price">$12</span>
+                    </div>
+                </div>
+
+                <div class="menu-category" data-category="mains">
+                    <h3>Main Courses</h3>
+                    <div class="menu-item">
+                        <div class="menu-item-content">
+                            <h4>Grilled King Salmon</h4>
+                            <p>Wild-caught, herb butter sauce, roasted fingerlings, seasonal vegetables</p>
+                        </div>
+                        <span class="price">$38</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-content">
+                            <h4>Alaskan Halibut</h4>
+                            <p>Pan-seared, sweet corn risotto, asparagus, citrus butter</p>
+                        </div>
+                        <span class="price">$42</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-content">
+                            <h4>Seafood Cioppino</h4>
+                            <p>Dungeness crab, mussels, prawns, fresh fish, saffron-tomato broth</p>
+                        </div>
+                        <span class="price">$45</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-content">
+                            <h4>Pan-Seared Black Cod</h4>
+                            <p>Miso glaze, forbidden rice, baby bok choy</p>
+                        </div>
+                        <span class="price">$39</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-content">
+                            <h4>Grilled Prime Ribeye</h4>
+                            <p>14oz, garlic mashed potatoes, grilled asparagus, red wine demi-glace</p>
+                        </div>
+                        <span class="price">$45</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-content">
+                            <h4>Free-Range Chicken</h4>
+                            <p>Pan-roasted, wild mushroom risotto, natural jus</p>
+                        </div>
+                        <span class="price">$32</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-content">
+                            <h4>Wild Mushroom Linguine</h4>
+                            <p>House-made pasta, foraged mushrooms, truffle cream (Vegetarian)</p>
+                        </div>
+                        <span class="price">$28</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-content">
+                            <h4>Quinoa & Roasted Vegetable Bowl</h4>
+                            <p>Seasonal vegetables, avocado, tahini dressing (Vegan)</p>
+                        </div>
+                        <span class="price">$26</span>
+                    </div>
+                </div>
+
+                <div class="menu-category" data-category="desserts">
+                    <h3>Desserts</h3>
+                    <div class="menu-item">
+                        <div class="menu-item-content">
+                            <h4>Washington Apple Tart</h4>
+                            <p>Vanilla bean ice cream, salted caramel</p>
+                        </div>
+                        <span class="price">$10</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-content">
+                            <h4>Dark Chocolate Mousse</h4>
+                            <p>Local raspberry coulis, fresh berries</p>
+                        </div>
+                        <span class="price">$11</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-content">
+                            <h4>Maple Crème Brûlée</h4>
+                            <p>House-made shortbread cookies</p>
+                        </div>
+                        <span class="price">$10</span>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-content">
+                            <h4>Artisanal Cheese Plate</h4>
+                            <p>Local cheeses, honey, nuts, dried fruit</p>
+                        </div>
+                        <span class="price">$16</span>
+                    </div>
+                </div>
+
+                <div class="menu-category" data-category="beverages">
+                    <h3>Beverages</h3>
+                    <div class="menu-item beverage-multi">
+                        <div class="menu-item-content">
+                            <h4>Signature Cocktails</h4>
+                            <p>Pacific Sunset (vodka, elderflower, citrus) - $14</p>
+                            <p>The Maritime Manhattan (bourbon, vermouth, bitters) - $15</p>
+                            <p>Lavender Collins (gin, lavender, lemon) - $13</p>
+                            <p>Seattle Mule (local vodka, ginger beer, lime) - $12</p>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-item-content">
+                            <h4>Local Draft Beers</h4>
+                            <p>Selection of Pacific Northwest craft beers</p>
+                        </div>
+                        <span class="price">$7-9</span>
+                    </div>
+                    <div class="menu-item beverage-multi">
+                        <div class="menu-item-content">
+                            <h4>Wine List</h4>
+                            <p>Extensive selection of Washington and Oregon wines</p>
+                            <p>Ask your server for our complete wine list</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reservations Section -->
+    <section id="reservations" class="reservations">
+        <div class="container">
+            <div class="section-header">
+                <p class="accent-text">Book Your Experience</p>
+                <h2>Make a Reservation</h2>
+                <p>Join us for an unforgettable dining experience</p>
+            </div>
+            <form class="reservation-form" id="reservationForm" novalidate data-api-endpoint="/api/reservations">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name" required 
+                               pattern="[A-Za-z ]{2,50}" data-error="Please enter a valid name"
+                               aria-describedby="name-error"
+                               placeholder="John Smith">
+                        <span class="error-message" id="name-error" role="alert"></span>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" required
+                               data-error="Please enter a valid email address"
+                               aria-describedby="email-error"
+                               placeholder="your@email.com">
+                        <span class="error-message" id="email-error" role="alert"></span>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" required
+                           pattern="[0-9()-\s]{10,}" data-error="Please enter a valid phone number"
+                           aria-describedby="phone-error"
+                           placeholder="(xxx) xxx-xxxx">
+                    <span class="error-message" id="phone-error" role="alert"></span>
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="date">Date</label>
+                        <input type="date" id="date" name="date" required
+                               data-error="Please select a valid date"
+                               data-availability-endpoint="/api/available-times"
+                               aria-describedby="date-error">
+                        <span class="error-message" id="date-error" role="alert"></span>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="time">Time</label>
+                        <select id="time" name="time" required data-error="Please select a time"
+                                aria-describedby="time-error" disabled>
+                            <option value="">Select time</option>
+                        </select>
+                        <span class="error-message" id="time-error" role="alert"></span>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="party">Party Size</label>
+                    <select id="party" name="party" required data-error="Please select party size"
+                            aria-describedby="party-error">
+                        <option value="">Select party size</option>
+                        <option value="1">1 Person</option>
+                        <option value="2">2 People</option>
+                        <option value="3">3 People</option>
+                        <option value="4">4 People</option>
+                        <option value="5">5 People</option>
+                        <option value="6">6 People</option>
+                        <option value="7">7 People</option>
+                        <option value="8">8 People</option>
+                    </select>
+                    <span class="error-message" id="party-error" role="alert"></span>
+                </div>
+                
+                <div class="form-group">
+                    <label for="special-requests">Special Requests (Optional)</label>
+                    <textarea id="special-requests" name="special-requests" 
+                            rows="3" placeholder="Any dietary restrictions or special occasions?"
+                            aria-label="Special Requests"></textarea>
+                </div>
+                
+                <div class="form-status" aria-live="polite">
+                    <div class="availability-message"></div>
+                    <div class="submission-message"></div>
+                </div>
+                
+                <button type="submit" class="submit-button" data-submit-text="Reserve Table">
+                    <span class="button-text">Reserve Table</span>
+                    <span class="button-loader"></span>
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="text-center">Location & Contact</h2>
+            
+            <!-- Restaurant Images -->
+            <div class="restaurant-gallery">
+                <div class="gallery-grid">
+                    <div class="gallery-item">
+                        <img src="img/Interior.png" alt="Main Dining Room" class="gallery-image">
+                        <div class="gallery-overlay">
+                            <h4>Main Dining Room</h4>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="img/Private Dining.png" alt="Private Dining Room" class="gallery-image">
+                        <div class="gallery-overlay">
+                            <h4>Private Dining Room</h4>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="img/Bar Area.png" alt="Bar & Lounge" class="gallery-image">
+                        <div class="gallery-overlay">
+                            <h4>Bar & Lounge</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Visit Us</h3>
+                    <p>1901 Western Avenue</p>
+                    <p>Seattle, WA 98101</p>
+                    <p>(Adjacent to Pike Place Market)</p>
+                    <p>Phone: (206) 553-7200</p>
+                    <p>Email: reservations@maritimegrill.com</p>
+                </div>
+                <div class="contact-hours">
+                    <h3>Hours</h3>
+                    <p>Dinner Service:</p>
+                    <p>Tuesday - Thursday: 5:00 PM - 10:00 PM</p>
+                    <p>Friday - Saturday: 5:00 PM - 11:00 PM</p>
+                    <p>Sunday: 4:00 PM - 9:00 PM</p>
+                    <p>Monday: Closed</p>
+                    <p class="special-note">Happy Hour: Tuesday - Friday 4:00 PM - 6:00 PM</p>
+                    <p class="special-note">Private dining room available for special events</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h3>The Maritime Grill</h3>
+                </div>
+                <div class="footer-social">
+                    <a href="#" aria-label="Visit our Facebook page"><i class="fab fa-facebook"></i></a>
+                    <a href="#" aria-label="Follow us on Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="Follow us on Twitter"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 The Maritime Grill. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    </body>
+</html>
+</body>
+</html>
