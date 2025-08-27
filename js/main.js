@@ -120,6 +120,7 @@ document.addEventListener('DOMContentLoaded', () => {
     initNavigation();
     initMenu();
     initLazyLoading();
+    initImageOptimization();
 
     // Add smooth scrolling to all anchor links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -131,3 +132,30 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 });
+
+// Image optimization and preloading
+function initImageOptimization() {
+    // Preload critical images
+    const criticalImages = [
+        'img/Hero Image.webp',
+        'img/Hero Image.png'
+    ];
+
+    criticalImages.forEach(src => {
+        const link = document.createElement('link');
+        link.rel = 'preload';
+        link.as = 'image';
+        link.href = src;
+        document.head.appendChild(link);
+    });
+
+    // Add loading animation for gallery images
+    document.querySelectorAll('.gallery-image').forEach(img => {
+        img.style.opacity = '0';
+        img.style.transition = 'opacity 0.3s ease';
+        
+        img.addEventListener('load', function() {
+            this.style.opacity = '1';
+        });
+    });
+}

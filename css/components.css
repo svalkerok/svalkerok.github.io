@@ -266,7 +266,20 @@
     height: 250px;
     object-fit: cover;
     transition: transform 0.3s ease;
-    display: block; /* Убираем пробелы под изображением */
+    display: block;
+    /* Оптимизация загрузки изображений */
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
+}
+
+/* Прогрессивная загрузка изображений */
+.gallery-image[loading="lazy"] {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.gallery-image[loading="lazy"].loaded {
+    opacity: 1;
 }
 
 .gallery-item:hover .gallery-image {
