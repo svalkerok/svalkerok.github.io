@@ -1,22 +1,33 @@
 # Restaurant Images
 
-This folder contains images for The Maritime Grill website.
+This folder contains all the visual assets for the Maritime Grill restaurant website.
 
-For the live version, replace these with actual restaurant images:
+## Available Images
 
-## Required Images:
-- Hero Image.png (1920x1080) - Main hero background
-- Our Story Section.png (800x600) - About section image
-- Interior.png (600x400) - Main dining room
-- Private Dining.png (600x400) - Private dining room
-- Bar Area.png (600x400) - Bar and lounge area
+### Hero & Main Sections
+- `Hero Image.png` - Main hero section background
+- `Our Story Section.png` - About section background
+- `Interior.png` - Restaurant interior view
+- `Location.png` - Restaurant location/exterior view
 
-## Image Guidelines:
-- Use high-quality images (at least 1200px wide for hero)
-- Optimize for web (use WebP format if possible)
-- Ensure images are properly compressed
-- Use descriptive alt text for accessibility
+### Menu Items
+- `Seafood Platter.png` - Signature seafood platter
+- `Lobster Thermidor.png` - Premium lobster dish
+- `Grilled Fish.png` - Fresh grilled fish
+- `Seafood Pasta.png` - Seafood pasta specialty
 
-## Current Status:
-The website is designed to work with placeholder images.
-To add real images, upload them to this folder with the exact filenames listed above.
+### Beverages
+- `Craft Beers.png` - Craft beer selection
+- `Wine Selection.png` - Wine collection
+- `Signature Cocktails.png` - Cocktail menu
+
+### Restaurant Areas
+- `Bar Area.png` - Bar and lounge area
+- `Private Dining.png` - Private dining rooms
+
+### Site Previews
+- `Site.png` - Website desktop preview
+- `Site (1).png` - Alternative site view
+- `Site (2).png` - Mobile site preview
+
+All images are optimized for web use and properly sized for the website layout.
