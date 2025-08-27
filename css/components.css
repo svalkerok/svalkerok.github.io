@@ -300,12 +300,16 @@
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     height: fit-content; /* Автоматическая высота блоков */
     min-height: 350px; /* Минимальная высота для равномерности */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Выравнивание содержимого по верху */
 }
 
 .contact-info h3, .contact-hours h3 {
     color: var(--color-primary);
     margin-bottom: 1.5rem;
     font-size: 1.5rem;
+    margin-top: 0; /* Убираем верхний отступ у заголовков */
 }
 
 .contact-info p, .contact-hours p {
@@ -401,6 +405,7 @@
     .contact-info, .contact-hours {
         min-height: auto; /* Убираем минимальную высоту на мобильных */
         padding: 1.5rem; /* Уменьшенный padding для мобильных */
+        justify-content: flex-start; /* Сохраняем выравнивание по верху */
     }
 
     .footer-content {
